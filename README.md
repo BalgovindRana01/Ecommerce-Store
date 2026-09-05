@@ -1,4 +1,4 @@
-# BuyinHome - Khadrido Ecommerce Store
+# BuyinHome - Kharido Ecommerce Store
 
 A complete production-ready React + TypeScript ecommerce frontend for the local Indian store "BuyinHome - Khadrido".
 

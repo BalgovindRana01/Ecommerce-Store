@@ -68,6 +68,12 @@ This frontend is designed to connect to the backend API at `VITE_API_URL`.
    npm run build
    ```
 
+### GitHub Pages
+
+Every push to `main` builds and deploys the frontend through GitHub Actions. After enabling GitHub Pages with **GitHub Actions** as the source, the site will be available at:
+
+`https://balgovindrana01.github.io/Ecommerce-Store/`
+
 ### Backend development
 
 The Cloudflare Workers API is in `backend/`.

@@ -92,6 +92,8 @@ The Cloudflare Workers API is in `backend/`.
   ```bash
   npm run deploy:backend
   ```
+4. Veiw My Project
+   https://leafy-chimera-452142.netlify.app/
 
 ## Project Structure
 

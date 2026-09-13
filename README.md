@@ -4,7 +4,7 @@ A complete ecommerce project for the local Indian store "BuyinHome - Kharido", w
 
 ## Features
 
-- **Store Details**: BuyinHome - Khadrido with tagline "Everything on this platform for you"
+- **Store Details**: BuyinHome - Kharido with tagline "Everything on this platform for you"
 - **Categories**: Grocery, Dairy, Snacks, Beverages, Household, Lifestyles
 - **Delivery**: ₹20 flat for delivery, free for self-pickup
 - **Products**: 20 sample products with emoji placeholders

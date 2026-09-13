@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order Confirmation</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .header { background-color: #f8f9fa; padding: 20px; text-align: center; }
+        .order-details { margin: 20px; }
+        .item { border-bottom: 1px solid #ddd; padding: 10px; }
+        .total { font-weight: bold; font-size: 18px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Thank you for your order!</h1>
+        <p>Your order has been placed successfully.</p>
+    </div>
+
+    <div class="order-details">
+        <h2>Order #{{orderId}}</h2>
+        <p><strong>Shipping Address:</strong> {{shippingAddress}}</p>
+        <p><strong>Order Date:</strong> {{orderDate}}</p>
+
+        <h3>Items Ordered:</h3>
+        {{#items}}
+        <div class="item">
+            <p><strong>{{name}}</strong> - Quantity: {{quantity}} - Price: ₹{{price}}</p>
+        </div>
+        {{/items}}
+
+        <p class="total">Total Amount: ₹{{total}}</p>
+    </div>
+
+    <p>If you have any questions, please contact us at support@yourstore.com</p>
+</body>
+</html>

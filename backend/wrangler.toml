@@ -1,0 +1,24 @@
+name = "store1"
+main = "src/index.js"
+compatibility_date = "2024-01-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "store_db"
+database_id = "37535a2a-6674-44d9-90c6-ca32ea0d7786"
+
+[[kv_namespaces]]
+binding = "KV"
+id = "71a1bb58620446d094fddb429f87cdf8"
+preview_id = "71a1bb58620446d094fddb429f87cdf8"
+
+[vars]
+EMAIL_FROM = "noreply@yourstore.com"
+
+# AI binding for Cloudflare Workers AI (alternative to Claude)
+[ai]
+binding = "AI"
+
+# Cron triggers for daily stock analysis
+[triggers]
+crons = ["30 17 * * *"]  # Daily at 17:30 UTC (11:30 PM IST)

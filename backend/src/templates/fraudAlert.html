@@ -1,0 +1,33 @@
+<!-- Fraud Alert Email Template -->
+<h2>🚨 धोखाधड़ी अलर्ट - ऑर्डर समीक्षा आवश्यक</h2>
+
+<p><strong>ऑर्डर ID:</strong> {{orderId}}</p>
+<p><strong>ग्राहक:</strong> {{customerEmail}}</p>
+<p><strong>कुल राशि:</strong> ₹{{total}}</p>
+<p><strong>ऑर्डर तिथि:</strong> {{orderDate}}</p>
+
+<h3>ऑर्डर आइटम:</h3>
+<ul>
+  {{#each items}}
+  <li>{{name}} - मात्रा: {{quantity}} - मूल्य: ₹{{price}}</li>
+  {{/each}}
+</ul>
+
+<h3>AI विश्लेषण:</h3>
+<p><strong>निर्णय:</strong> {{decision}}</p>
+<p><strong>कारण:</strong> {{reasoning}}</p>
+
+<h4>फ्लैग कारण:</h4>
+<ul>
+  {{#each flagReasons}}
+  <li>{{this}}</li>
+  {{/each}}
+</ul>
+
+<p><strong>शिपिंग पता:</strong> {{shippingAddress}}</p>
+
+<div style="background: #ffe6e6; padding: 15px; border-radius: 5px; margin: 20px 0;">
+  <p><strong>कार्रवाई आवश्यक:</strong> कृपया इस ऑर्डर की मैन्युअल समीक्षा करें और इसे स्वीकृत या अस्वीकृत करें।</p>
+</div>
+
+<p>धन्यवाद,<br>BuyinHome AI सिस्टम</p>

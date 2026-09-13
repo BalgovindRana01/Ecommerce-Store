@@ -1,0 +1,70 @@
+<!-- Critical Stock Alert Email Template -->
+<h2>🚨 क्रिटिकल स्टॉक अलर्ट - तत्काल कार्रवाई आवश्यक</h2>
+
+<h3>आज का व्यवसाय सारांश:</h3>
+<p>{{dailySummary}}</p>
+
+<h3>क्रिटिकल स्टॉक आइटम (तत्काल ऑर्डर करें):</h3>
+<table style="border-collapse: collapse; width: 100%; margin: 20px 0;">
+  <thead>
+    <tr style="background: #ffe6e6;">
+      <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">उत्पाद</th>
+      <th style="border: 1px solid #ddd; padding: 8px; text-align: center;">वर्तमान स्टॉक</th>
+      <th style="border: 1px solid #ddd; padding: 8px; text-align: center;">न्यूनतम आवश्यक</th>
+      <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">सप्लायर</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each criticalItems}}
+    <tr>
+      <td style="border: 1px solid #ddd; padding: 8px;">{{product_name}}</td>
+      <td style="border: 1px solid #ddd; padding: 8px; text-align: center; color: red; font-weight: bold;">{{current_stock}}</td>
+      <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">{{min_stock}}</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">{{supplier}}</td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+
+<h3>AI-जनरेटेड पर्चेज ऑर्डर (ड्राफ्ट):</h3>
+<p>निम्नलिखित पर्चेज ऑर्डर अपने-आप बनाए गए हैं। कृपया उन्हें समीक्षा करें और सप्लायर्स को भेजें:</p>
+
+{{#each purchaseOrders}}
+<div style="border: 1px solid #ddd; padding: 15px; margin: 10px 0; border-radius: 5px;">
+  <h4>{{supplier_name}}</h4>
+  <p><strong>कुल आइटम:</strong> {{total_items}}</p>
+  <p><strong>संपर्क:</strong> {{supplier_email}} | {{supplier_phone}}</p>
+
+  <table style="border-collapse: collapse; width: 100%; margin-top: 10px;">
+    <thead>
+      <tr style="background: #f8f9fa;">
+        <th style="border: 1px solid #ddd; padding: 5px; text-align: left;">उत्पाद</th>
+        <th style="border: 1px solid #ddd; padding: 5px; text-align: center;">मात्रा</th>
+        <th style="border: 1px solid #ddd; padding: 5px; text-align: left;">अर्जेंसी</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each items}}
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 5px;">{{product_name}}</td>
+        <td style="border: 1px solid #ddd; padding: 5px; text-align: center;">{{quantity}}</td>
+        <td style="border: 1px solid #ddd; padding: 5px;">{{urgency}}</td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</div>
+{{/each}}
+
+<div style="background: #ffe6e6; padding: 15px; border-radius: 5px; margin: 20px 0;">
+  <p><strong>तत्काल कार्य:</strong></p>
+  <ul>
+    <li>क्रिटिकल आइटम के लिए सप्लायर्स से संपर्क करें</li>
+    <li>पर्चेज ऑर्डर की समीक्षा करें और भेजें</li>
+    <li>स्टॉक स्तरों की निगरानी करें</li>
+  </ul>
+</div>
+
+<p>यह ईमेल रोजाना 11:30 PM IST पर अपने-आप भेजा जाता है।</p>
+
+<p>धन्यवाद,<br>BuyinHome AI स्टॉक मैनेजमेंट सिस्टम</p>

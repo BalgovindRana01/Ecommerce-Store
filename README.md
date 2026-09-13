@@ -1,4 +1,4 @@
-# BuyinHome - Khadrido Ecommerce Store
+# BuyinHome - Kharido Ecommerce Store
 
 A complete ecommerce project for the local Indian store "BuyinHome - Kharido", with a React frontend and Cloudflare Workers backend in one repository.
 
